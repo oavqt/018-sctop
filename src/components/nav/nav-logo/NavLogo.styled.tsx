@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const StyledNavLogo = styled.section.attrs(() => ({
-  role: 'navigation-logo'
+const StyledNavLogo = styled.div.attrs(() => ({
+  role: 'nav-logo'
 }))`
   align-items: center;
   display: flex;

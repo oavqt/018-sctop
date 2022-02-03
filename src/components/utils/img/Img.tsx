@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import StyledImg from './img.styled';
+import StyledImg from './Img.styled';
 
 interface ImgProps {
   attrs: {

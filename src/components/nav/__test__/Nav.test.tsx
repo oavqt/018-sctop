@@ -21,16 +21,16 @@ describe('Nav', () => {
   test('expect the NavLogo component to render', () => {
     renderWithRouter(<Nav />);
 
-    const NavLogoComponent = screen.getByRole('navigation-logo');
+    const NavLogoComponent = screen.getByRole('nav-logo');
 
     expect(NavLogoComponent).toBeInTheDocument();
   });
 
-  test('expect the NavLinks component to render', () => {
+  test('expect the NavNavigation component to render', () => {
     renderWithRouter(<Nav />);
 
-    const NavLinksComponent = screen.getByRole('navigation-links');
+    const NavNavigationComponent = screen.getByRole('nav-navigation');
 
-    expect(NavLinksComponent).toBeInTheDocument();
+    expect(NavNavigationComponent).toBeInTheDocument();
   });
 });

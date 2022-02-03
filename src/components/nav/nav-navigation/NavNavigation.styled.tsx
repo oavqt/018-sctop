@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-const StyledNavLink = styled(NavLink)`
+const StyledNavNavigationLink = styled(NavLink)`
   font-size: 1.2rem;
   text-decoration: none;
 
@@ -10,14 +10,14 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-const StyledNavLinks = styled.section.attrs(() => ({
-  role: 'navigation-links'
+const StyledNavNavigation = styled.div.attrs(() => ({
+  role: 'nav-navigation'
 }))`
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  width: 100%;
 `;
 
-export { StyledNavLink };
-export default StyledNavLinks;
+export { StyledNavNavigationLink };
+export default StyledNavNavigation;
