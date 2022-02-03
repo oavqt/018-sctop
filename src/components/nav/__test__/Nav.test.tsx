@@ -9,4 +9,12 @@ describe('Nav', () => {
 
     expect(NavComponent).toBeInTheDocument();
   });
+
+  test('expect the NavLogo component to render', () => {
+    render(<Nav />);
+
+    const NavLogoComponent = screen.getByRole('logo');
+
+    expect(NavLogoComponent).toBeInTheDocument();
+  });
 });
