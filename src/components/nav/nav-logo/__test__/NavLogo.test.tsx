@@ -5,7 +5,7 @@ describe('NavLogo', () => {
   test('expect a NavLogo component to render', () => {
     render(<NavLogo />);
 
-    const NavLogoComponent = screen.getByRole('logo');
+    const NavLogoComponent = screen.getByRole('navigation-logo');
 
     expect(NavLogoComponent).toBeInTheDocument();
   });
