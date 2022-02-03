@@ -1,10 +1,11 @@
 import { FC } from 'react';
+import Nav from './components/nav/Nav';
 import StyledApp from './styled/App.styled';
 
 const App: FC = () => {
   return (
     <StyledApp>
-      <div>{"le vt'que"}</div>
+      <Nav />
     </StyledApp>
   );
 };
