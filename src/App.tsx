@@ -1,7 +1,12 @@
-import { ReactElement } from 'react';
+import { FC } from 'react';
+import StyledApp from './styled/App.styled';
 
-const App = (): ReactElement => {
-  return <div>{"le vt'que"}</div>;
+const App: FC = () => {
+  return (
+    <StyledApp>
+      <div>{"le vt'que"}</div>
+    </StyledApp>
+  );
 };
 
 export default App;
