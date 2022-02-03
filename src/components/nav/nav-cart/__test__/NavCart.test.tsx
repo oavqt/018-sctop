@@ -18,13 +18,13 @@ describe('NavCart', () => {
     expect(NavCartComponent).toBeInTheDocument();
   });
 
-  test('expect the NavCart component to have a placeholder link', () => {
+  test('expect the NavCart component to have a cart link', () => {
     renderWithRouter(<NavCart />);
 
     const NavCartComponentLink = screen.getByRole('link');
-    const NavCartComponentPlaceholder = screen.getByText('placeholder');
+    const NavCartComponentCart = screen.getByText('cart');
 
     expect(NavCartComponentLink).toBeInTheDocument();
-    expect(NavCartComponentPlaceholder).toBeInTheDocument();
+    expect(NavCartComponentCart).toBeInTheDocument();
   });
 });

@@ -3,6 +3,8 @@ import StyledSection from './Section.styled';
 
 interface SectionProps {
   styled?: {
+    display?: string;
+    'justify-content'?: string;
     width?: string;
   };
 }

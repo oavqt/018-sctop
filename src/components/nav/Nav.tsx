@@ -4,6 +4,12 @@ import NavLogo from './nav-logo/NavLogo';
 import StyledNav from './Nav.styled';
 import NavCart from './nav-cart/NavCart';
 import Section from '../utils/section/Section';
+import NavLogin from './nav-login/NavLogin';
+
+const styledNavCartLogin = {
+  display: 'flex',
+  'justify-content': 'flex-end'
+};
 
 const Nav: FC = () => {
   return (
@@ -11,8 +17,9 @@ const Nav: FC = () => {
       <StyledNav>
         <NavLogo />
         <NavNavigation />
-        <Section>
+        <Section styled={{ ...styledNavCartLogin }}>
           <NavCart />
+          <NavLogin />
         </Section>
       </StyledNav>
     </Section>

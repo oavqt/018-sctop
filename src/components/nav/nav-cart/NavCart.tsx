@@ -4,7 +4,7 @@ import StyledNavCart, { StyledNavCartLink } from './NavCart.styled';
 const NavCart: FC = () => {
   return (
     <StyledNavCart>
-      <StyledNavCartLink to='cart'>placeholder</StyledNavCartLink>
+      <StyledNavCartLink to='cart'>cart</StyledNavCartLink>
     </StyledNavCart>
   );
 };

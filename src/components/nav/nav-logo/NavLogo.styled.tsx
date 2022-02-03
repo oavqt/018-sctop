@@ -5,7 +5,6 @@ const StyledNavLogo = styled.div.attrs(() => ({
 }))`
   align-items: center;
   display: flex;
-  width: 25%;
 `;
 
 export default StyledNavLogo;
