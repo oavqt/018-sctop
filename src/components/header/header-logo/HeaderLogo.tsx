@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import assets from '../../../assets/assets';
-import H1 from '../../utils/headings/h1/H1';
+import H1 from '../../utils/h1/H1';
 import Img from '../../utils/img/Img';
 import Section from '../../utils/section/Section';
 import StyledHeaderLogo from './HeaderLogo.styled';

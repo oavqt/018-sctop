@@ -1,11 +1,14 @@
 import { FC } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import Nav from './components/header/Header';
 import StyledApp from './styled/App.styled';
 
 const App: FC = () => {
   return (
     <StyledApp>
-      <Nav />
+      <BrowserRouter>
+        <Nav />
+      </BrowserRouter>
     </StyledApp>
   );
 };
