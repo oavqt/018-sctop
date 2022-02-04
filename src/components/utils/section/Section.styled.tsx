@@ -9,12 +9,8 @@ interface StyledSectionProps {
 }
 
 const StyledSection = styled.section<StyledSectionProps>`
-  display: ${(props) =>
-    props.styled?.display ? props.styled?.display : 'block'};
-  justify-content: ${(props) =>
-    props.styled?.['justify-content']
-      ? props.styled?.['justify-content']
-      : 'center'};
+  display: ${(props) => props.styled?.display};
+  justify-content: ${(props) => props.styled?.['justify-content']};
   width: ${(props) => (props.styled?.width ? props.styled?.width : '100%')};
 `;
 

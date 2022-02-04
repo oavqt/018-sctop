@@ -1,6 +1,8 @@
 import { FC } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nav from './components/header/Header';
+import Div from './components/utils/div/Div';
+import Home from './pages/home/Home';
 import StyledApp from './styled/App.styled';
 
 const App: FC = () => {
@@ -8,6 +10,9 @@ const App: FC = () => {
     <StyledApp>
       <BrowserRouter>
         <Nav />
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
       </BrowserRouter>
     </StyledApp>
   );

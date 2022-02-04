@@ -6,7 +6,9 @@ interface StyledImgProps {
     src: string;
   };
   styled?: {
+    position?: string;
     width?: string;
+    'z-index'?: string;
   };
 }
 
@@ -15,7 +17,9 @@ const StyledImg = styled.img.attrs((props: StyledImgProps) => ({
   src: props.attrs.src
 }))<StyledImgProps>`
   height: auto;
+  position: ${(props) => props.styled?.position};
   width: ${(props) => (props.styled?.width ? props.styled?.width : '100%')};
+  z-index: ${(props) => props.styled?.['z-index']};
 `;
 
 export default StyledImg;

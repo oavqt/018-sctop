@@ -7,7 +7,9 @@ interface ImgProps {
     src: string;
   };
   styled?: {
+    position?: string;
     width?: string;
+    'z-index'?: string;
   };
 }
 

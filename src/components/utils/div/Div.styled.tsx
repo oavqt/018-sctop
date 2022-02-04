@@ -4,20 +4,17 @@ interface StyledDivProps {
   styled?: {
     'align-items'?: string;
     display?: string;
+    height?: string;
     'justify-content'?: string;
     width?: string;
   };
 }
 
 const StyledDiv = styled.div<StyledDivProps>`
-  align-items: ${(props) =>
-    props.styled?.['align-items'] ? props.styled?.['align-items'] : 'center'};
-  display: ${(props) =>
-    props.styled?.display ? props.styled?.display : 'block'};
-  justify-content: ${(props) =>
-    props.styled?.['justify-content']
-      ? props.styled?.['justify-content']
-      : 'center'};
+  align-items: ${(props) => props.styled?.['align-items']};
+  display: ${(props) => props.styled?.display};
+  height: ${(props) => props.styled?.height};
+  justify-content: ${(props) => props.styled?.['justify-content']};
   width: ${(props) => (props.styled?.width ? props.styled?.width : '100%')};
 `;
 

@@ -7,7 +7,7 @@ import StyledHeaderNavigation, {
   StyledHeaderNavigationLink
 } from './HeaderNavigation.styled';
 
-const styledHeaderNavigationList = {
+const ulStyledProp = {
   'align-items': 'center',
   display: 'flex',
   'justify-content': 'space-evenly',
@@ -35,7 +35,7 @@ const headerNavigationRoutes = [
 
 const HeaderNavigation: FC = () => {
   const headerNavigationRoutesLink = (
-    <Ul styled={{ ...styledHeaderNavigationList }}>
+    <Ul styled={{ ...ulStyledProp }}>
       {headerNavigationRoutes.map((route) => {
         return (
           <Li key={uuidv4()}>

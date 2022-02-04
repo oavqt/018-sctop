@@ -11,16 +11,10 @@ interface StyledUlProps {
 }
 
 const StyledUl = styled.ul<StyledUlProps>`
-  align-items: ${(props) =>
-    props.styled?.['align-items'] ? props.styled?.['align-items'] : 'center'};
-  display: ${(props) =>
-    props.styled?.display ? props.styled?.display : 'block'};
-  justify-content: ${(props) =>
-    props.styled?.['justify-content']
-      ? props.styled?.['justify-content']
-      : 'center'};
-  list-style: ${(props) =>
-    props.styled?.['list-style'] ? props.styled?.['list-style'] : 'none'};
+  align-items: ${(props) => props.styled?.['align-items']};
+  display: ${(props) => props.styled?.display};
+  justify-content: ${(props) => props.styled?.['justify-content']};
+  list-style: ${(props) => props.styled?.['list-style']};
   width: ${(props) => (props.styled?.width ? props.styled?.width : '100%')};
 `;
 

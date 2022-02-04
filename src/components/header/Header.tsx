@@ -6,17 +6,12 @@ import HeaderNavigation from './header-navigation/HeaderNavigation';
 import Section from '../utils/section/Section';
 import StyledHeader from './Header.styled';
 
-const styledHeaderCartLogin = {
-  display: 'flex',
-  'justify-content': 'flex-end'
-};
-
 const HeaderNav: FC = () => {
   return (
     <StyledHeader>
       <HeaderLogo />
       <HeaderNavigation />
-      <Section styled={{ ...styledHeaderCartLogin }}>
+      <Section styled={{ display: 'flex', 'justify-content': 'flex-end' }}>
         <HeaderCart />
         <HeaderLogin />
       </Section>
