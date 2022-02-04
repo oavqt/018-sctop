@@ -5,11 +5,11 @@ describe('Img', () => {
   test('expect a Img component to render', () => {
     render(<Img attrs={{ alt: 'alt', src: 'src' }} />);
 
-    const ImgComponent = screen.getByRole('img');
+    const imgComponent = screen.getByRole('img');
 
-    expect(ImgComponent).toBeInTheDocument();
+    expect(imgComponent).toBeInTheDocument();
 
-    expect(ImgComponent).toHaveAttribute('alt', 'alt');
-    expect(ImgComponent).toHaveAttribute('src', 'src');
+    expect(imgComponent).toHaveAttribute('alt', 'alt');
+    expect(imgComponent).toHaveAttribute('src', 'src');
   });
 });

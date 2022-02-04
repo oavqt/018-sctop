@@ -5,8 +5,8 @@ describe('Section', () => {
   test('expect a Section component to render', () => {
     render(<Section>section</Section>);
 
-    const SectionComponent = screen.getByText('section');
+    const sectionComponent = screen.getByText('section');
 
-    expect(SectionComponent).toBeInTheDocument();
+    expect(sectionComponent).toBeInTheDocument();
   });
 });

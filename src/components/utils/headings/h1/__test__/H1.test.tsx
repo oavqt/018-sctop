@@ -5,8 +5,8 @@ describe('H1', () => {
   test('expect a H1 component to render', () => {
     render(<H1>h1</H1>);
 
-    const H1Component = screen.getByText('h1');
+    const h1Component = screen.getByText('h1');
 
-    expect(H1Component).toBeInTheDocument();
+    expect(h1Component).toBeInTheDocument();
   });
 });

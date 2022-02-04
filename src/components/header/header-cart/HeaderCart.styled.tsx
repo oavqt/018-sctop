@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-const StyledNavLoginLink = styled(NavLink)`
+const StyledHeaderCartLink = styled(NavLink)`
   font-size: 1.2rem;
   text-decoration: none;
 
@@ -10,11 +10,11 @@ const StyledNavLoginLink = styled(NavLink)`
   }
 `;
 
-const StyledNavLogin = styled.div.attrs(() => ({
-  role: 'nav-login'
+const StyledHeaderCart = styled.div.attrs(() => ({
+  role: 'banner-cart'
 }))`
   margin: 0 0.5em;
 `;
 
-export { StyledNavLoginLink };
-export default StyledNavLogin;
+export { StyledHeaderCartLink };
+export default StyledHeaderCart;

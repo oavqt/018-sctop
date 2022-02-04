@@ -3,19 +3,19 @@ import assets from '../../../assets/assets';
 import H1 from '../../utils/headings/h1/H1';
 import Img from '../../utils/img/Img';
 import Section from '../../utils/section/Section';
-import StyledNavLogo from './NavLogo.styled';
+import StyledHeaderLogo from './HeaderLogo.styled';
 
-const NavLogo: FC = () => {
+const HeaderLogo: FC = () => {
   const { name, image } = assets.vlogo;
 
   return (
     <Section>
-      <StyledNavLogo>
+      <StyledHeaderLogo>
         <Img attrs={{ alt: name, src: image }} styled={{ width: '12em' }} />
         <H1>{"le vt'que"}</H1>
-      </StyledNavLogo>
+      </StyledHeaderLogo>
     </Section>
   );
 };
 
-export default NavLogo;
+export default HeaderLogo;

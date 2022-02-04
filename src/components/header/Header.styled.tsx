@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledNav = styled.nav`
+const StyledHeader = styled.header`
   align-items: center;
   display: flex;
   height: 7em;
@@ -8,4 +8,4 @@ const StyledNav = styled.nav`
   width: 100%;
 `;
 
-export default StyledNav;
+export default StyledHeader;

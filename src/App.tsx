@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Nav from './components/nav/Nav';
+import Nav from './components/header/Header';
 import StyledApp from './styled/App.styled';
 
 const App: FC = () => {
