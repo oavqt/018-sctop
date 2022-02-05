@@ -3,11 +3,10 @@ import StyledH1 from './H1.styled';
 
 interface H1Props {
   styled?: {
-    'align-self'?: string;
     color?: string;
     'font-family'?: string;
     'font-size'?: string;
-    margin?: string;
+    'text-align'?: string;
   };
 }
 

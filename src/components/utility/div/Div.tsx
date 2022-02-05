@@ -5,6 +5,7 @@ interface DivProps {
   styled?: {
     'align-items'?: string;
     display?: string;
+    'flex-direction'?: string;
     height?: string;
     'justify-content'?: string;
     width?: string;

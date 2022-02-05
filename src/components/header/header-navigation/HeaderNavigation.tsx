@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import Section from '../../utils/section/Section';
-import Li from '../../utils/ul/li/Li';
-import Ul from '../../utils/ul/Ul';
+import Section from '../../utility/section/Section';
+import Li from '../../utility/ul/li/Li';
+import Ul from '../../utility/ul/Ul';
 import { v4 as uuidv4 } from 'uuid';
 import StyledHeaderNavigation, {
   StyledHeaderNavigationLink

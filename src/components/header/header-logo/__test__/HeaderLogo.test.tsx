@@ -1,9 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../../../setup/jest/utility/routes/routes';
 import HeaderLogo from '../HeaderLogo';
 
 describe('HeaderLogo', () => {
   test('expect a HeaderLogo component to render', () => {
-    render(<HeaderLogo />);
+    renderWithRouter(<HeaderLogo />);
 
     const headerLogoComponent = screen.getByRole('banner-logo');
 
@@ -11,7 +12,7 @@ describe('HeaderLogo', () => {
   });
 
   test('expect the HeaderLogo component to render an image', () => {
-    render(<HeaderLogo />);
+    renderWithRouter(<HeaderLogo />);
 
     const headerLogoComponentImage = screen.getByRole('img');
 

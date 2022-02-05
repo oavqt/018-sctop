@@ -4,6 +4,7 @@ interface StyledDivProps {
   styled?: {
     'align-items'?: string;
     display?: string;
+    'flex-direction'?: string;
     height?: string;
     'justify-content'?: string;
     width?: string;
@@ -13,6 +14,7 @@ interface StyledDivProps {
 const StyledDiv = styled.div<StyledDivProps>`
   align-items: ${(props) => props.styled?.['align-items']};
   display: ${(props) => props.styled?.display};
+  flex-direction: ${(props) => props.styled?.['flex-direction']};
   height: ${(props) => props.styled?.height};
   justify-content: ${(props) => props.styled?.['justify-content']};
   width: ${(props) => (props.styled?.width ? props.styled?.width : '100%')};

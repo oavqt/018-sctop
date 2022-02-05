@@ -1,12 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import { ReactElement } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import App from '../../../App';
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../../setup/jest/utility/routes/routes';
 import Home from '../Home';
 
 describe('Home', () => {
   test('expect a Home component to be rendered', () => {
-    render(<Home />);
+    renderWithRouter(<Home />);
 
     const homeComponent = screen.getByRole('home');
 
@@ -14,7 +12,7 @@ describe('Home', () => {
   });
 
   test('expect a Hero component to be rendered', () => {
-    render(<Home />);
+    renderWithRouter(<Home />);
 
     const heroComponent = screen.getByRole('home-hero');
 

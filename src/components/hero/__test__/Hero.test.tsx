@@ -1,9 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../../setup/jest/utility/routes/routes';
 import Hero from '../Hero';
 
 describe('Hero', () => {
   test('expect a Hero component to be rendered', () => {
-    render(<Hero />);
+    renderWithRouter(<Hero />);
 
     const heroComponent = screen.getByRole('home-hero');
 
@@ -11,7 +12,7 @@ describe('Hero', () => {
   });
 
   test('expect the Hero component to render a h1 and a image', () => {
-    render(<Hero />);
+    renderWithRouter(<Hero />);
 
     const heroComponentH1 = screen.getByRole('heading');
     const heroComponentImg = screen.getByRole('img');

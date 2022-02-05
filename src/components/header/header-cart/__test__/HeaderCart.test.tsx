@@ -1,15 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import { ReactElement } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../../../setup/jest/utility/routes/routes';
 import HeaderCart from '../HeaderCart';
 
 describe('HeaderCart', () => {
-  const renderWithRouter = (component: ReactElement, { route = '/' } = {}) => {
-    window.history.pushState({}, '', route);
-
-    return render(component, { wrapper: BrowserRouter });
-  };
-
   test('expect a HeaderCart component to be rendered', () => {
     renderWithRouter(<HeaderCart />);
 

@@ -5,8 +5,11 @@ const styled = { createGlobalStyle };
 const StyledMain = styled.createGlobalStyle`
   body {
     font-family: 'Poppins', sans-serif;
-    margin: auto;
-    width: 75vw;
+  }
+
+  .root {
+    margin: 0 auto;
+    width: 90vw;
   }
 `;
 

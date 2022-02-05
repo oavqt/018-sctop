@@ -1,15 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import { ReactElement } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../../../setup/jest/utility/routes/routes';
 import HeaderLogin from '../HeaderLogin';
 
 describe('HeaderLogin', () => {
-  const renderWithRouter = (component: ReactElement, { route = '/' } = {}) => {
-    window.history.pushState({}, '', route);
-
-    return render(component, { wrapper: BrowserRouter });
-  };
-
   test('expect a HeaderLogin component to be rendered', () => {
     renderWithRouter(<HeaderLogin />);
 
