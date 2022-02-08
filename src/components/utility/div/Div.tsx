@@ -4,6 +4,7 @@ import StyledDiv from './Div.styled';
 interface DivProps {
   styled?: {
     'align-items'?: string;
+    animation?: string;
     display?: string;
     'flex-direction'?: string;
     height?: string;

@@ -11,13 +11,13 @@ describe('Hero', () => {
     expect(heroComponent).toBeInTheDocument();
   });
 
-  test('expect the Hero component to render a h1 and a image', () => {
+  test('expect the Hero component to render a h1, h1, and a image', () => {
     renderWithRouter(<Hero />);
 
-    const heroComponentH1 = screen.getByRole('heading');
+    const heroComponentH1s = screen.getAllByRole('heading');
     const heroComponentImg = screen.getByRole('img');
 
-    expect(heroComponentH1).toBeInTheDocument();
+    expect(heroComponentH1s).toHaveLength(2);
     expect(heroComponentImg).toBeInTheDocument();
   });
 });

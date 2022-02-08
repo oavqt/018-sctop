@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 
 type imageObjectArray = {
+  description: string;
   name: string;
   id: string;
   image: string;
@@ -33,7 +34,7 @@ const useImageRotation = (
       const imageSegment = imageObjectsSegment();
 
       setImageObject(imageSegment[1]);
-    }, 5000);
+    }, 12000);
 
     return () => clearInterval(imageObjectRotate);
   }, [imageObjectsSegment]);

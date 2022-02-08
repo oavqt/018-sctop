@@ -7,6 +7,19 @@ const StyledMain = styled.createGlobalStyle`
     font-family: 'Poppins', sans-serif;
   }
 
+  @keyframes --fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    25%,
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
   .root {
     margin: 0 auto;
     width: 90vw;
