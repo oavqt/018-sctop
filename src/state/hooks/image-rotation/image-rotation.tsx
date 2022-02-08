@@ -1,10 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 
 type imageObjectArray = {
-  description: string;
-  name: string;
-  id: string;
-  image: string;
+  description: { title: string };
+  image: { alt: string; id: string; src: string };
 }[];
 
 const useImageRotation = (

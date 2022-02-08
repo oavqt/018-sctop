@@ -9,4 +9,14 @@ describe('KeyInfo', () => {
 
     expect(keyInfoComponent).toBeInTheDocument();
   });
+
+  test('expect the KeyInfo component to have three KeyInfoCard components', () => {
+    render(<KeyInfo />);
+
+    const keyInfoComponent = screen.getByRole('home-keyinfo');
+    const keyInfoKeyInfoCardComponents = screen.getAllByRole('article');
+
+    expect(keyInfoComponent).toBeInTheDocument();
+    expect(keyInfoKeyInfoCardComponents).toHaveLength(3);
+  });
 });

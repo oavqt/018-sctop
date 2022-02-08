@@ -18,7 +18,7 @@ const StyledImg = styled.img.attrs((props: StyledImgProps) => ({
 }))<StyledImgProps>`
   height: auto;
   position: ${(props) => props.styled?.position};
-  width: ${(props) => (props.styled?.width ? props.styled?.width : '100%')};
+  width: ${(props) => props.styled?.width};
   z-index: ${(props) => props.styled?.['z-index']};
 `;
 

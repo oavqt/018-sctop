@@ -18,4 +18,12 @@ describe('Home', () => {
 
     expect(heroComponent).toBeInTheDocument();
   });
+
+  test('expect a KeyInfo component to be rendered', () => {
+    renderWithRouter(<Home />);
+
+    const heroComponent = screen.getByRole('home-keyinfo');
+
+    expect(heroComponent).toBeInTheDocument();
+  });
 });

@@ -7,13 +7,6 @@ import StyledHeaderNavigation, {
   StyledHeaderNavigationLink
 } from './HeaderNavigation.styled';
 
-const ulStyledProp = {
-  'align-items': 'center',
-  display: 'flex',
-  'justify-content': 'space-evenly',
-  'list-style': 'none'
-};
-
 const headerNavigationRoutes = [
   {
     description: 'home',
@@ -35,7 +28,15 @@ const headerNavigationRoutes = [
 
 const HeaderNavigation: FC = () => {
   const headerNavigationRoutesLink = (
-    <Ul styled={{ ...ulStyledProp }}>
+    <Ul
+      styled={{
+        'align-items': 'center',
+        display: 'flex',
+        'justify-content': 'space-evenly',
+        'list-style': 'none',
+        padding: '0'
+      }}
+    >
       {headerNavigationRoutes.map((route) => {
         return (
           <Li key={uuidv4()}>
@@ -49,7 +50,7 @@ const HeaderNavigation: FC = () => {
   );
 
   return (
-    <Section>
+    <Section styled={{ width: '100%' }}>
       <StyledHeaderNavigation>
         {headerNavigationRoutesLink}
       </StyledHeaderNavigation>

@@ -11,7 +11,7 @@ interface StyledSectionProps {
 const StyledSection = styled.section<StyledSectionProps>`
   display: ${(props) => props.styled?.display};
   justify-content: ${(props) => props.styled?.['justify-content']};
-  width: ${(props) => (props.styled?.width ? props.styled?.width : '100%')};
+  width: ${(props) => props.styled?.width};
 `;
 
 export default StyledSection;

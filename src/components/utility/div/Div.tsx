@@ -9,6 +9,7 @@ interface DivProps {
     'flex-direction'?: string;
     height?: string;
     'justify-content'?: string;
+    'text-align'?: string;
     width?: string;
   };
 }

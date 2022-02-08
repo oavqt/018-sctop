@@ -7,6 +7,7 @@ interface UlProps {
     display?: string;
     'justify-content'?: string;
     'list-style'?: string;
+    padding?: string;
     width?: string;
   };
 }

@@ -7,41 +7,58 @@ import vhero3 from './images/vhero3.png';
 
 const assets = {
   vlogo: {
-    description: "le vt'que, veatae, quibusdam",
-    name: 'header-logo',
-    id: uuidv4(),
-    image: vlogo
+    description: { title: "le vt'que, veatae, quibusdam" },
+    image: { id: uuidv4(), src: vlogo, alt: 'header-logo' }
   },
   vhero: [
     {
-      description: "le vt'que, veatae, quibusdam",
-      name: 'home-hero',
-      id: uuidv4(),
-      image: vlogo
+      description: { title: "le vt'que, veatae, quibusdam" },
+      image: { alt: 'home-hero', id: uuidv4(), src: vlogo }
     },
     {
-      description: "le vt'que, veatae, quibusdam",
-      name: 'home-hero-second',
-      id: uuidv4(),
-      image: vhero
+      description: { title: "le vt'que, veatae, quibusdam" },
+      image: { alt: 'home-hero-second', id: uuidv4(), src: vhero }
     },
     {
-      description: "le vt'que, veatae, quibusdam",
-      name: 'home-hero-third',
-      id: uuidv4(),
-      image: vhero1
+      description: { title: "le vt'que, veatae, quibusdam" },
+      image: { alt: 'home-hero-third', id: uuidv4(), src: vhero1 }
     },
     {
-      description: "le vt'que, veatae, quibusdam",
-      name: 'home-hero-fourth',
-      id: uuidv4(),
-      image: vhero2
+      description: { title: "le vt'que, veatae, quibusdam" },
+      image: { alt: 'home-hero-fourth', id: uuidv4(), src: vhero2 }
     },
     {
-      description: "le vt'que, veatae, quibusdam",
-      name: 'home-hero-fifth',
-      id: uuidv4(),
-      image: vhero3
+      description: { title: "le vt'que, veatae, quibusdam" },
+      image: { alt: 'home-hero-fifth', id: uuidv4(), src: vhero3 }
+    }
+  ],
+  vcard: [
+    {
+      description: {
+        title:
+          "le vt'que, veatae, quibusdam. quod reprehenderit cupiditate non autem vel corrupti?",
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: { alt: 'home-keyinfo', id: uuidv4(), src: vhero },
+      layout: 'right'
+    },
+    {
+      description: {
+        title:
+          "le vt'que, veatae, quibusdam. quod reprehenderit cupiditate non autem vel corrupti?",
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: { alt: 'home-keyinfo-first', id: uuidv4(), src: vhero1 },
+      layout: 'left'
+    },
+    {
+      description: {
+        title:
+          "le vt'que, veatae, quibusdam. quod reprehenderit cupiditate non autem vel corrupti?",
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: { alt: 'home-keyinfo-second', id: uuidv4(), src: vhero3 },
+      layout: 'right'
     }
   ]
 };

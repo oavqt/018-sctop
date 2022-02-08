@@ -7,34 +7,24 @@ describe('image-rotation', () => {
 
     const testImageObjectArray = [
       {
-        description: '-0',
-        name: '--0',
-        id: '---0',
-        image: '----0'
+        description: { title: '-0' },
+        image: { alt: '--0', id: '---0', src: '----0' }
       },
       {
-        description: '-1',
-        name: '--1',
-        id: '---1',
-        image: '---1'
+        description: { title: '-1' },
+        image: { alt: '--1', id: '---1', src: '---1' }
       },
       {
-        description: '-2',
-        name: '--2',
-        id: '---2',
-        image: '----2'
+        description: { title: '-2' },
+        image: { alt: '--2', id: '---2', src: '----2' }
       },
       {
-        description: '-3',
-        name: '--3',
-        id: '---3',
-        image: '----3'
+        description: { title: '-3' },
+        image: { alt: '--3', id: '---3', src: '----3' }
       },
       {
-        description: '-4',
-        name: '--4',
-        id: '---4',
-        image: '----4'
+        description: { title: '-4' },
+        image: { alt: '--4', id: '---4', src: '----4' }
       }
     ];
 

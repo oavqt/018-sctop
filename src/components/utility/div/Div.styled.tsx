@@ -8,6 +8,7 @@ interface StyledDivProps {
     'flex-direction'?: string;
     height?: string;
     'justify-content'?: string;
+    'text-align'?: string;
     width?: string;
   };
 }
@@ -19,7 +20,8 @@ const StyledDiv = styled.div<StyledDivProps>`
   flex-direction: ${(props) => props.styled?.['flex-direction']};
   height: ${(props) => props.styled?.height};
   justify-content: ${(props) => props.styled?.['justify-content']};
-  width: ${(props) => (props.styled?.width ? props.styled?.width : '100%')};
+  text-align: ${(props) => props.styled?.['text-align']};
+  width: ${(props) => props.styled?.width};
 `;
 
 export default StyledDiv;

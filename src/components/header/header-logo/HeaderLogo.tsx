@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import assets from '../../../assets/assets';
-import H1 from '../../utility/h1/H1';
+import HTag from '../../utility/htag/HTag';
 import Img from '../../utility/img/Img';
 import Section from '../../utility/section/Section';
 import StyledHeaderLogo, { StyledHeaderLogoLink } from './HeaderLogo.styled';
@@ -12,15 +12,15 @@ const h1StyledProp = {
 };
 
 const HeaderLogo: FC = () => {
-  const { name, image } = assets.vlogo;
+  const { alt, src } = assets.vlogo.image;
 
   return (
     <Section>
       <StyledHeaderLogo>
         <StyledHeaderLogoLink to={'/'}>
-          <Img attrs={{ alt: name, src: image }} styled={{ width: '12em' }} />
+          <Img attrs={{ alt: alt, src: src }} styled={{ width: '12em' }} />
         </StyledHeaderLogoLink>
-        <H1 styled={{ ...h1StyledProp }}>{"le vt'que"}</H1>
+        <HTag styled={{ ...h1StyledProp }}>{"le vt'que"}</HTag>
       </StyledHeaderLogo>
     </Section>
   );

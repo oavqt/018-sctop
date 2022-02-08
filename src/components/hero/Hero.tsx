@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import assets from '../../assets/assets';
 import useImageRotation from '../../state/hooks/image-rotation/image-rotation';
 import Div from '../utility/div/Div';
-import H1 from '../utility/h1/H1';
+import HTag from '../utility/htag/HTag';
 import Img from '../utility/img/Img';
 import StyledHero, { StyledHeroLink } from './Hero.styled';
 
@@ -18,21 +18,27 @@ const Hero: FC = () => {
           'align-items': 'center',
           animation: '--fade-in-out 12s ease-in-out',
           display: 'flex',
-          height: '100%'
+          height: '100%',
+          'justify-content': 'center',
+          width: '100%'
         }}
       >
         <StyledHeroLink to='products'>
           <Img
-            attrs={{ alt: imageObject.name, src: imageObject.image }}
+            attrs={{ alt: imageObject.image.alt, src: imageObject.image.src }}
             styled={{ width: '100%' }}
           />
         </StyledHeroLink>
-        <H1>{imageObject.description}</H1>
+        <HTag attrs={{ type: 'h2' }} styled={{ 'font-size': '2rem' }}>
+          {imageObject.description.title}
+        </HTag>
       </Div>
       <Div>
-        <H1 styled={{ 'text-align': 'center' }}>
-          {"le vt'que, eum ipsum doloribus nobis enim vel adipisci consectetur"}
-        </H1>
+        <HTag attrs={{ type: 'h1' }} styled={{ 'text-align': 'center' }}>
+          {
+            "le vt'que, quos porro accusantium dicta debitis, veniam, doloremque, sint tenetur cum natus iste?"
+          }
+        </HTag>
       </Div>
     </StyledHero>
   );
