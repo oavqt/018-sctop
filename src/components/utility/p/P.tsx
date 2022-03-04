@@ -8,6 +8,7 @@ interface PProps {
     'font-size'?: string;
     margin?: string;
     'text-align'?: string;
+    width?: string;
   };
 }
 

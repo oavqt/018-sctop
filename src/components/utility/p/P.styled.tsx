@@ -7,6 +7,7 @@ interface StyledPProps {
     'font-size'?: string;
     margin?: string;
     'text-align'?: string;
+    width?: string;
   };
 }
 
@@ -16,6 +17,7 @@ const StyledP = styled.p<StyledPProps>`
   font-size: ${(props) => props.styled?.['font-size']};
   margin: ${(props) => props.styled?.margin};
   text-align: ${(props) => props.styled?.['text-align']};
+  width: ${(props) => props.styled?.width};
 `;
 
 export default StyledP;

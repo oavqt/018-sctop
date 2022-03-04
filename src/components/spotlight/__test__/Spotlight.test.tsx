@@ -9,4 +9,12 @@ describe('Spotlight', () => {
 
     expect(spotlightComponent).toBeInTheDocument();
   });
+
+  test('expect a Spotlight component to be rendered with 3 articles', () => {
+    render(<Spotlight />);
+
+    const spotlightComponentArticles = screen.getAllByRole('article');
+
+    expect(spotlightComponentArticles).toHaveLength(3);
+  });
 });

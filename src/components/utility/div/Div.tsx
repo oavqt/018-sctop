@@ -7,6 +7,9 @@ interface DivProps {
     animation?: string;
     display?: string;
     'flex-direction'?: string;
+    'flex-wrap'?: string;
+    gap?: string;
+    'grid-template'?: string;
     height?: string;
     'justify-content'?: string;
     'text-align'?: string;

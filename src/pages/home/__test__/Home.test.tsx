@@ -26,4 +26,12 @@ describe('Home', () => {
 
     expect(heroComponent).toBeInTheDocument();
   });
+
+  test('expect a Spotlight component to be rendered', () => {
+    renderWithRouter(<Home />);
+
+    const spotlightComponent = screen.getByRole('home-spotlight');
+
+    expect(spotlightComponent).toBeInTheDocument();
+  });
 });

@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Hero from '../../components/hero/Hero';
 import KeyInfo from '../../components/keyinfo/KeyInfo';
+import Spotlight from '../../components/spotlight/Spotlight';
 import StyledHome from './Home.styled';
 
 const Home: FC = () => {
@@ -8,6 +9,7 @@ const Home: FC = () => {
     <StyledHome>
       <Hero />
       <KeyInfo />
+      <Spotlight />
     </StyledHome>
   );
 };
