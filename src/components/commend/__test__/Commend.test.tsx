@@ -10,13 +10,13 @@ describe('Commend', () => {
     expect(commendComponent).toBeInTheDocument();
   });
 
-  test('expect a Commend component to be rendered with 3 articles', () => {
+  test('expect a Commend component to be rendered with 6 articles', () => {
     render(<Commend />);
 
     const commendComponent = screen.getByRole('home-commend');
     const commendComponentArticles = screen.getAllByRole('article');
 
     expect(commendComponent).toBeInTheDocument();
-    expect(commendComponentArticles).toHaveLength(3);
+    expect(commendComponentArticles).toHaveLength(6);
   });
 });

@@ -34,4 +34,12 @@ describe('Home', () => {
 
     expect(spotlightComponent).toBeInTheDocument();
   });
+
+  test('expect a Commend component to be rendered', () => {
+    renderWithRouter(<Home />);
+
+    const spotlightComponent = screen.getByRole('home-commend');
+
+    expect(spotlightComponent).toBeInTheDocument();
+  });
 });

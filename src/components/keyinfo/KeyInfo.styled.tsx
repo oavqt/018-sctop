@@ -16,7 +16,7 @@ const StyledKeyInfo = styled.section.attrs(() => ({
     border-radius: 0.2em;
     border-bottom-left-radius: 100%;
     height: 2em;
-    margin: 0 auto;
+    margin: 2em auto;
     width: 50%;
   }
 `;

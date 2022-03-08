@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Commend from '../../components/commend/Commend';
 import Hero from '../../components/hero/Hero';
 import KeyInfo from '../../components/keyinfo/KeyInfo';
 import Spotlight from '../../components/spotlight/Spotlight';
@@ -10,6 +11,7 @@ const Home: FC = () => {
       <Hero />
       <KeyInfo />
       <Spotlight />
+      <Commend />
     </StyledHome>
   );
 };

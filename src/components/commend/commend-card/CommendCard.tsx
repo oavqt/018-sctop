@@ -22,6 +22,14 @@ interface CommendCardProps {
 const CommendCard: FC<CommendCardProps> = (props) => {
   return (
     <StyledCommendCard>
+      <Img
+        attrs={{ alt: props.image.alt, src: props.image.src }}
+        styled={{
+          margin: 'auto',
+          'max-width': '12em',
+          width: '100%'
+        }}
+      />
       <Div>
         <P>{props.description.body}</P>
       </Div>
@@ -29,7 +37,6 @@ const CommendCard: FC<CommendCardProps> = (props) => {
         <HTag>{props.author.name}</HTag>
         <P>{props.author.title}</P>
       </Div>
-      <Img attrs={{ alt: props.image.alt, src: props.image.src }} />
     </StyledCommendCard>
   );
 };

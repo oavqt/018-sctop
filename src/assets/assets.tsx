@@ -126,6 +126,27 @@ const assets = {
         body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
       },
       image: { alt: 'home-keyinfo-second', id: uuidv4(), src: vhero3 }
+    },
+    {
+      author: { name: "le'quibusdam,", title: "le'esquape" },
+      description: {
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: { alt: 'home-keyinfo', id: uuidv4(), src: vhero }
+    },
+    {
+      author: { name: "le'quibusdam,", title: "le'esquape" },
+      description: {
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: { alt: 'home-keyinfo-first', id: uuidv4(), src: vhero1 }
+    },
+    {
+      author: { name: "le'quibusdam,", title: "le'esquape" },
+      description: {
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: { alt: 'home-keyinfo-second', id: uuidv4(), src: vhero3 }
     }
   ]
 };
