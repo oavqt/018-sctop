@@ -12,6 +12,7 @@ interface DivProps {
     'grid-template'?: string;
     height?: string;
     'justify-content'?: string;
+    margin?: string;
     'text-align'?: string;
     width?: string;
   };

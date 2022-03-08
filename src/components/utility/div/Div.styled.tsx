@@ -11,6 +11,7 @@ interface StyledDivProps {
     'grid-template'?: string;
     height?: string;
     'justify-content'?: string;
+    margin?: string;
     'text-align'?: string;
     width?: string;
   };
@@ -26,6 +27,7 @@ const StyledDiv = styled.div<StyledDivProps>`
   grid-template: ${(props) => props.styled?.['grid-template']};
   height: ${(props) => props.styled?.height};
   justify-content: ${(props) => props.styled?.['justify-content']};
+  margin: ${(props) => props.styled?.margin};
   text-align: ${(props) => props.styled?.['text-align']};
   width: ${(props) => props.styled?.width};
 `;

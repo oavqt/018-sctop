@@ -1,9 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../../../setup/jest/utility/routes/routes';
 import MobileBanner from '../MobileBanner';
 
 describe('MobileBanner', () => {
   test('expect a MobileBanner component to be rendered', () => {
-    render(<MobileBanner />);
+    renderWithRouter(<MobileBanner />);
 
     const mobileBannerComponent = screen.getByRole('home-mobile-banner');
 
@@ -11,7 +12,7 @@ describe('MobileBanner', () => {
   });
 
   test('expect the MobileBanner component to be rendered with H2, P, and 2 Img components', () => {
-    render(<MobileBanner />);
+    renderWithRouter(<MobileBanner />);
 
     const mobileBannerComponent = screen.getByRole('home-mobile-banner');
     const mobileBannerComponentHeading = screen.getByRole('heading');

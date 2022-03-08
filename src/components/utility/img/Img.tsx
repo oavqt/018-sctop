@@ -7,9 +7,15 @@ interface ImgProps {
     src: string;
   };
   styled?: {
+    'border-radius'?: string;
+    hover?: {
+      'box-shadow'?: string;
+      transform?: string;
+    };
     margin?: string;
     'max-width'?: string;
     position?: string;
+    transition?: string;
     width?: string;
     'z-index'?: string;
   };

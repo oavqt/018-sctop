@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nav from './components/header/Header';
+import MobileBanner from './components/mobile/mobile-banner/MobileBanner';
 import Home from './pages/home/Home';
 import StyledApp from './styled/App.styled';
 
@@ -12,6 +13,7 @@ const App: FC = () => {
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>
+        <MobileBanner />
       </BrowserRouter>
     </StyledApp>
   );

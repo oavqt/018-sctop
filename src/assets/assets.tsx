@@ -4,6 +4,8 @@ import vhero from './images/vhero.png';
 import vhero1 from './images/vhero1.png';
 import vhero2 from './images/vhero2.png';
 import vhero3 from './images/vhero3.png';
+import vmobilebannerapple from './images/vapple.png';
+import vmobilebanneraplay from './images/vplay.png';
 
 const assets = {
   vlogo: {
@@ -156,8 +158,8 @@ const assets = {
       body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
     },
     image: [
-      { alt: 'home-mobile-apple', id: uuidv4(), src: vhero },
-      { alt: 'home-mobile-android', id: uuidv4(), src: vhero }
+      { alt: 'home-mobile-apple', id: uuidv4(), src: vmobilebannerapple },
+      { alt: 'home-mobile-android', id: uuidv4(), src: vmobilebanneraplay }
     ]
   }
 };
