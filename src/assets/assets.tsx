@@ -69,20 +69,6 @@ const assets = {
         body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
       },
       image: [
-        { alt: 'home-spotlight-first', id: uuidv4(), src: vhero },
-        { alt: 'home-spotlight-first', id: uuidv4(), src: vhero },
-        { alt: 'home-spotlight-first', id: uuidv4(), src: vhero },
-        { alt: 'home-spotlight-first', id: uuidv4(), src: vhero }
-      ],
-      layout: 'spotlight-multiple-left'
-    },
-    {
-      description: {
-        title:
-          "le vt'que, veatae, quibusdam. quod reprehenderit cupiditate non autem vel corrupti?",
-        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
-      },
-      image: [
         { alt: 'home-spotlight-multiple-first', id: uuidv4(), src: vhero1 },
         { alt: 'home-spotlight-multiple-second', id: uuidv4(), src: vhero1 },
         { alt: 'home-spotlight-multiple-third', id: uuidv4(), src: vhero1 },
@@ -99,10 +85,47 @@ const assets = {
         body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
       },
       image: [
+        { alt: 'home-spotlight-first', id: uuidv4(), src: vhero },
+        { alt: 'home-spotlight-first', id: uuidv4(), src: vhero },
+        { alt: 'home-spotlight-first', id: uuidv4(), src: vhero },
+        { alt: 'home-spotlight-first', id: uuidv4(), src: vhero }
+      ],
+      layout: 'spotlight-multiple-left'
+    },
+    {
+      description: {
+        title:
+          "le vt'que, veatae, quibusdam. quod reprehenderit cupiditate non autem vel corrupti?",
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: [
         { alt: 'home-spotlight-last', id: uuidv4(), src: vhero3 },
         { alt: 'home-spotlight-last', id: uuidv4(), src: vhero3 }
       ],
-      layout: 'spotlight-single-right'
+      layout: 'spotlight-image'
+    }
+  ],
+  vcommend: [
+    {
+      author: { name: "le'quibusdam,", title: "le'esquape" },
+      description: {
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: { alt: 'home-keyinfo', id: uuidv4(), src: vhero }
+    },
+    {
+      author: { name: "le'quibusdam,", title: "le'esquape" },
+      description: {
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: { alt: 'home-keyinfo-first', id: uuidv4(), src: vhero1 }
+    },
+    {
+      author: { name: "le'quibusdam,", title: "le'esquape" },
+      description: {
+        body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+      },
+      image: { alt: 'home-keyinfo-second', id: uuidv4(), src: vhero3 }
     }
   ]
 };

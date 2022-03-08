@@ -7,6 +7,7 @@ interface StyledImgProps {
   };
   styled?: {
     position?: string;
+    'max-width'?: string;
     width?: string;
     'z-index'?: string;
   };
@@ -18,6 +19,7 @@ const StyledImg = styled.img.attrs((props: StyledImgProps) => ({
 }))<StyledImgProps>`
   height: auto;
   position: ${(props) => props.styled?.position};
+  max-width: ${(props) => props.styled?.['max-width']};
   width: ${(props) => props.styled?.width};
   z-index: ${(props) => props.styled?.['z-index']};
 `;

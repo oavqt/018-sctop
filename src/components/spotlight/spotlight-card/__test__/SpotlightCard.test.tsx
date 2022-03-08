@@ -1,23 +1,24 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../../../setup/jest/utility/routes/routes';
 import SpotlightCard from '../SpotlightCard';
 
 describe('SpotlightCard', () => {
-  test('expect a SpotlightCard component to be rendered', () => {
-    const testCard = {
-      description: {
-        title: '---h3',
-        body: '---p'
-      },
-      image: [
-        {
-          alt: '---alt',
-          src: '---src'
-        }
-      ],
-      layout: '---'
-    };
+  const testCard = {
+    description: {
+      title: '---h3',
+      body: '---p'
+    },
+    image: [
+      {
+        alt: '---alt',
+        src: '---src'
+      }
+    ],
+    layout: '---'
+  };
 
-    render(<SpotlightCard {...testCard} />);
+  test('expect a SpotlightCard component to be rendered', () => {
+    renderWithRouter(<SpotlightCard {...testCard} />);
 
     const spotlightCardComponent = screen.getByRole('article');
 
@@ -25,21 +26,7 @@ describe('SpotlightCard', () => {
   });
 
   test('expect the SpotlightCard component to render with a Img, P, and H3 component', () => {
-    const testCard = {
-      description: {
-        title: '---h3',
-        body: '---p'
-      },
-      image: [
-        {
-          alt: '---alt',
-          src: '---src'
-        }
-      ],
-      layout: '---'
-    };
-
-    render(<SpotlightCard {...testCard} />);
+    renderWithRouter(<SpotlightCard {...testCard} />);
 
     const spotlightCardComponent = screen.getByRole('article');
     const spotlightCardComponentImg = screen.getByRole('img');
@@ -79,7 +66,7 @@ describe('SpotlightCard', () => {
       layout: 'spotlight-multiple'
     };
 
-    render(<SpotlightCard {...testCard} />);
+    renderWithRouter(<SpotlightCard {...testCard} />);
 
     const spotlightCardComponent = screen.getByRole('article');
     const spotlightCardComponentImg = screen.getAllByRole('img');

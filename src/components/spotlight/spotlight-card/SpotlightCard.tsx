@@ -1,4 +1,5 @@
 import { FC, Fragment, ReactElement, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import Div from '../../utility/div/Div';
 import HTag from '../../utility/htag/HTag';
@@ -28,10 +29,9 @@ const SpotlightCard: FC<SpotlightCardProps> = (props) => {
           <StyledSpotlightCard
             styled={{
               'align-items': 'center',
-              display: 'grid',
+              display: 'flex',
               'justify-content': 'center',
-              gap: '2em',
-              'grid-template': '1fr / repeat(2, 1fr)'
+              gap: '2em'
             }}
           >
             <Div
@@ -43,14 +43,15 @@ const SpotlightCard: FC<SpotlightCardProps> = (props) => {
               }}
             >
               {props.image.map((img) => (
-                <Img
-                  key={uuidv4()}
-                  attrs={{ alt: img.alt, src: img.src }}
-                  styled={{ width: '25em' }}
-                />
+                <Link key={uuidv4()} to={'products'}>
+                  <Img
+                    attrs={{ alt: img.alt, src: img.src }}
+                    styled={{ 'max-width': '25em', width: '100%' }}
+                  />
+                </Link>
               ))}
             </Div>
-            <Div>
+            <Div styled={{ width: '50%' }}>
               <HTag>{props.description.title}</HTag>
               <P>{props.description.body}</P>
             </Div>
@@ -75,11 +76,12 @@ const SpotlightCard: FC<SpotlightCardProps> = (props) => {
               }}
             >
               {props.image.map((img) => (
-                <Img
-                  key={uuidv4()}
-                  attrs={{ alt: img.alt, src: img.src }}
-                  styled={{ width: '25em' }}
-                />
+                <Link key={uuidv4()} to={'products'}>
+                  <Img
+                    attrs={{ alt: img.alt, src: img.src }}
+                    styled={{ 'max-width': '25em', width: '100%' }}
+                  />
+                </Link>
               ))}
             </Div>
             <Div>
@@ -117,11 +119,36 @@ const SpotlightCard: FC<SpotlightCardProps> = (props) => {
             </Div>
             <Div styled={{ display: 'flex' }}>
               {props.image.map((img) => (
-                <Img
-                  key={uuidv4()}
-                  attrs={{ alt: img.alt, src: img.src }}
-                  styled={{ width: '25em' }}
-                />
+                <Link key={uuidv4()} to={'products'}>
+                  <Img
+                    attrs={{ alt: img.alt, src: img.src }}
+                    styled={{ 'max-width': '25em', width: '100%' }}
+                  />
+                </Link>
+              ))}
+            </Div>
+          </StyledSpotlightCard>
+        );
+        break;
+      }
+      case 'spotlight-image': {
+        setElement(
+          <StyledSpotlightCard
+            styled={{
+              'align-items': 'center',
+              display: 'grid',
+              gap: '2em',
+              'justify-content': 'center'
+            }}
+          >
+            <Div styled={{ display: 'flex', 'flex-direction': 'column' }}>
+              {props.image.map((img) => (
+                <Link key={uuidv4()} to={'products'}>
+                  <Img
+                    attrs={{ alt: img.alt, src: img.src }}
+                    styled={{ 'max-width': '25em', width: '100%' }}
+                  />
+                </Link>
               ))}
             </Div>
           </StyledSpotlightCard>
@@ -133,7 +160,9 @@ const SpotlightCard: FC<SpotlightCardProps> = (props) => {
           <StyledSpotlightCard>
             <Div>
               {props.image.map((img) => (
-                <Img key={uuidv4()} attrs={{ alt: img.alt, src: img.src }} />
+                <Link key={uuidv4()} to={'products'}>
+                  <Img attrs={{ alt: img.alt, src: img.src }} />
+                </Link>
               ))}
             </Div>
             <Div>

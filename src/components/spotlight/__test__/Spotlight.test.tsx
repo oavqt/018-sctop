@@ -1,9 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import renderWithRouter from '../../../setup/jest/utility/routes/routes';
 import Spotlight from '../Spotlight';
 
 describe('Spotlight', () => {
   test('expect a Spotlight component to be rendered', () => {
-    render(<Spotlight />);
+    renderWithRouter(<Spotlight />);
 
     const spotlightComponent = screen.getByRole('home-spotlight');
 
@@ -11,7 +12,7 @@ describe('Spotlight', () => {
   });
 
   test('expect a Spotlight component to be rendered with 3 articles', () => {
-    render(<Spotlight />);
+    renderWithRouter(<Spotlight />);
 
     const spotlightComponentArticles = screen.getAllByRole('article');
 
