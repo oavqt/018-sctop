@@ -148,7 +148,18 @@ const assets = {
       },
       image: { alt: 'home-keyinfo-second', id: uuidv4(), src: vhero3 }
     }
-  ]
+  ],
+  vmobilebanner: {
+    description: {
+      title:
+        "le vt'que, veatae, quibusdam. quod reprehenderit cupiditate non autem vel corrupti?",
+      body: "le vt'que, veatae, quibusdam, suscipit fugit sit alias corrupti et velit quae laboriosam sapiente doloribus quam possimus magni itaque, aut debitis."
+    },
+    image: [
+      { alt: 'home-mobile-apple', id: uuidv4(), src: vhero },
+      { alt: 'home-mobile-android', id: uuidv4(), src: vhero }
+    ]
+  }
 };
 
 export default assets;
