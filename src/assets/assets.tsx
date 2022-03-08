@@ -6,6 +6,11 @@ import vhero2 from './images/vhero2.png';
 import vhero3 from './images/vhero3.png';
 import vmobilebannerapple from './images/vapple.png';
 import vmobilebanneraplay from './images/vplay.png';
+import vfootergithub from './images/vgithub.png';
+import vfooterlinkedin from './images/vlinkedin.png';
+import vfootertwitter from './images/vtwitter.png';
+import vfooterinstagram from './images/vinstagram.png';
+import vfooterfacebook from './images/vfacebook.png';
 
 const assets = {
   vlogo: {
@@ -161,7 +166,34 @@ const assets = {
       { alt: 'home-mobile-apple', id: uuidv4(), src: vmobilebannerapple },
       { alt: 'home-mobile-android', id: uuidv4(), src: vmobilebanneraplay }
     ]
-  }
+  },
+  vfootersocial: [
+    { alt: 'footer-github', id: uuidv4(), path: 'unknown', src: vfootergithub },
+    {
+      alt: 'footer-linkedin',
+      id: uuidv4(),
+      path: 'unknown',
+      src: vfooterlinkedin
+    },
+    {
+      alt: 'footer-twitter',
+      id: uuidv4(),
+      path: 'unknown',
+      src: vfootertwitter
+    },
+    {
+      alt: 'footer-instagram',
+      id: uuidv4(),
+      path: 'unknown',
+      src: vfooterinstagram
+    },
+    {
+      alt: 'footer-facebook',
+      id: uuidv4(),
+      path: 'unknown',
+      src: vfooterfacebook
+    }
+  ]
 };
 
 export default assets;
